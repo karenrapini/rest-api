@@ -6,13 +6,17 @@ import br.com.letscode.rebels.enums.Genero;
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter
 public class RebeldeEntity {
-    @Getter
+
     private String nome;
     private Integer idade;
     private Genero genero;
+    @Setter
     private Integer acusacoes = 0;
+    @Setter
     private InventarioDTO inventario;
+    @Setter
     private LocalizacaoDTO localizacao;
     @Setter
     private LocalizacaoDTO localizacaoAtualizada;

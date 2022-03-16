@@ -1,12 +1,12 @@
 package StarWarsRestAPIJavaSpring.letscode.entity;
 
-public class Item {
+public class ItemEntity {
 
     private String nome;
     private int pontos = 0;
     private int quantidade = 1;
 
-    public Item(String nome, int pontos, int quantidade) {
+    public ItemEntity(String nome, int pontos, int quantidade) {
         this.nome = nome;
         this.pontos = pontos;
         this.quantidade = quantidade;

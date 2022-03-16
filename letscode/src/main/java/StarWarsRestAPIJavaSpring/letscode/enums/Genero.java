@@ -1,4 +1,4 @@
-package br.com.letscode.rebels.enums;
+package StarWarsRestAPIJavaSpring.letscode.enums;
 
 public enum Genero {
         FEMININO, MASCULINO

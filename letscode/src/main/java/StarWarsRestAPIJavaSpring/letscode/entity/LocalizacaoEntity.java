@@ -1,4 +1,4 @@
-package br.com.letscode.rebels.entity;
+package StarWarsRestAPIJavaSpring.letscode.entity;
 
 public class LocalizacaoEntity {
 }

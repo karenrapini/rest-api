@@ -1,12 +1,11 @@
-package br.com.letscode.rebels.dto;
+package StarWarsRestAPIJavaSpring.letscode.dto;
 
-import StarWarsRestAPIJavaSpring.letscode.entity.Item;
+import StarWarsRestAPIJavaSpring.letscode.entity.ItemEntity;
 
 import java.util.List;
 
 public class ItemDTO {
 
-    // Item tem: quantidade, nome, pontos,
-    List<Item> itensIventario;
+    public static List<ItemEntity> itensInventario;
 
 }

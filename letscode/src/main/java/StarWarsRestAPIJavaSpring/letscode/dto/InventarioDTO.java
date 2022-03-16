@@ -1,20 +1,23 @@
 package StarWarsRestAPIJavaSpring.letscode.dto;
 
-import StarWarsRestAPIJavaSpring.letscode.entity.Item;
+import StarWarsRestAPIJavaSpring.letscode.entity.ItemEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
+
 public class InventarioDTO {
+    @Getter
+    @Setter
+    private List<ItemEntity> itens ;
 
-    // lista que recebe itens do inventarios
-    private List<Item> itens ;
-
-    public InventarioDTO(List<Item> itens) {
+    public InventarioDTO(List<ItemEntity> itens) {
         this.itens = itens;
-        Item arma = new Item("Arma", 4, 1 );
-        Item municao = new Item("Munição", 3, 1);
-        Item comida = new Item("Comida", 1, 1);
-        Item agua = new Item("Água", 2, 1);
+        ItemEntity arma = new ItemEntity("Arma", 4, 1 );
+        ItemEntity municao = new ItemEntity("Munição", 3, 1);
+        ItemEntity comida = new ItemEntity("Comida", 1, 1);
+        ItemEntity agua = new ItemEntity("Água", 2, 1);
         
         itens.add(arma);
         itens.add(municao);
