@@ -1,12 +1,12 @@
-package br.com.letscode.rebels.entity;
+package StarWarsRestAPIJavaSpring.letscode.entity;
 
-import br.com.letscode.rebels.dto.InventarioDTO;
+import StarWarsRestAPIJavaSpring.letscode.dto.InventarioDTO;
 import br.com.letscode.rebels.dto.LocalizacaoDTO;
 import br.com.letscode.rebels.enums.Genero;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Rebelde {
+public class RebeldeEntity {
     @Getter
     private String nome;
     private Integer idade;

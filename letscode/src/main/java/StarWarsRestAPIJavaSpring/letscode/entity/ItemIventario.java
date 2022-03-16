@@ -1,6 +1,11 @@
 package StarWarsRestAPIJavaSpring.letscode.entity;
 
-public class Inventario {
+public class ItemIventario {
+
+    //lista de itens
+
+
+
 
 
 }
