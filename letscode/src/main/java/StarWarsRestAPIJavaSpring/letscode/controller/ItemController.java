@@ -26,9 +26,7 @@ public class ItemController {
     }
     @PostMapping
     public ResponseEntity<ItemEntity> negociarItens (@RequestBody ItemEntity itemEntity, @RequestBody RebeldeEntity rebelde){
-//        rebelde e vejo se ele tem o item
             List<ItemEntity> inventario = rebelde.getInventario().getItens();
-            //corrigir retorno
        return ResponseEntity.ok(itemService.negociarItens(itemEntity));
     }
 

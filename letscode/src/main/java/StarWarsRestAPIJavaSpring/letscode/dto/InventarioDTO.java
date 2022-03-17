@@ -1,12 +1,13 @@
 package StarWarsRestAPIJavaSpring.letscode.dto;
 
 import StarWarsRestAPIJavaSpring.letscode.entity.ItemEntity;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
 
-
+@Data
 public class InventarioDTO {
     @Getter
     @Setter
@@ -18,7 +19,7 @@ public class InventarioDTO {
         ItemEntity municao = new ItemEntity("Munição", 3, 1);
         ItemEntity comida = new ItemEntity("Comida", 1, 1);
         ItemEntity agua = new ItemEntity("Água", 2, 1);
-        
+
         itens.add(arma);
         itens.add(municao);
         itens.add(comida);

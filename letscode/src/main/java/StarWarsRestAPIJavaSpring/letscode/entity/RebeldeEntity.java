@@ -1,8 +1,8 @@
 package StarWarsRestAPIJavaSpring.letscode.entity;
 
 import StarWarsRestAPIJavaSpring.letscode.dto.InventarioDTO;
+import StarWarsRestAPIJavaSpring.letscode.enums.Genero;
 import br.com.letscode.rebels.dto.LocalizacaoDTO;
-import br.com.letscode.rebels.enums.Genero;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +10,7 @@ import lombok.Setter;
 public class RebeldeEntity {
 
     private String nome;
+    private Long id;
     private Integer idade;
     private Genero genero;
     @Setter
@@ -20,7 +21,6 @@ public class RebeldeEntity {
     private LocalizacaoDTO localizacao;
     @Setter
     private LocalizacaoDTO localizacaoAtualizada;
-
 
     public boolean traidor(){
         if(acusacoes == 3){
